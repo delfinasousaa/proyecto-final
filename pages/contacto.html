@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!--etiquetas meta-->
+  <meta name="description" content="Tienda online de la cafetería más famosa y anitigua de Paris: Les deux magots. Puedes encontrar todos los productos tradicionales parisinos, delicisos y antiguos, realizados con mucho amor y dedicación de nuestra cocina única.">
+  <meta name="keyword" content="café, delicias, Paris, brunch, cultura parisina, cafetería, pastelería, retsaurante">
+  <meta name="author" content="Delfina Sousa">
+  <meta name="og:title" content="Les deux magots">
+  <meta name="og:type" content="website">
+  <meta name="og:image" content="../images/local/local.jpg">
+  <link rel="icon" href="../images/logo/icon.ico">
+  <!--link a bootstrap-->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+  <!--link a googlefonts-->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Titillium+Web:ital,wght@0,200;0,300;0,400;0,600;0,700;0,900;1,200;1,300;1,400;1,600;1,700&display=swap" rel="stylesheet">
+  <!--link a css-->
+  <link rel="stylesheet" href="../css/style.css">
+  <title>Les deux magots</title>
+</head>
+<body>
+
+  <!--Header-->
+  <header>
+    <div class="contenedor-fondo">
+      <nav class="navbar navbar-dark navbar-expand-lg ">
+        <div class="container-fluid">
+            <a class="contenedor-logo"  href="../index.html"> <img src="../images/logo/logo2.png" alt="logo con croissant">
+            </a>
+            <button class="navbar-toggler d-lg-none" id="toggler-alineacion-hamburguesa" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasDarkNavbar" aria-controls="offcanvasDarkNavbar" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="offcanvas offcanvas-end text-white d-lg-flex justify-content-end" tabindex="-1" id="offcanvasDarkNavbar" aria-labelledby="offcanvasDarkNavbarLabel">
+              <div class="offcanvas-header">
+                <h5 class="offcanvas-title" id="offcanvasDarkNavbarLabel">Menú</h5>
+                <button type="button" class="btn-close btn-close-white" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+              </div>
+              <div class="offcanvas-body" id="navbar-alineacion">
+                <ul class="navbar-nav flex-grow-1 pe-3 me-auto">
+                    <li class="nav-item">
+                      <a class="nav-link" aria-current="page" href="../index.html">Inicio</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="./productos.html">Productos</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="./ubicacion.html">Ubicación</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="./nosotros.html">Nosotros</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="./contacto.html">Contacto</a>
+                    </li>
+                  </ul>
+              </div>
+          </div>
+      </div>
+  </nav>
+<div class="capa"></div>
+</div>
+  </header>
+
+  <!--Main-->
+  <main>
+      <h1 class="h1-contacto">Enterate de todas las novedades</h1>
+      <div class="contenedor-div">
+      <section class="contenedor-section">
+        <h2 class="h2-form">Iniciar sesión</h2>
+        <form class="formulario">
+          <div class="container-formulario">
+            <div>
+              <label for="name">Nombre:</label>
+              <input type="text" id="name" placeholder="Ingresa tu nombre" required>
+          </div>
+          <div>
+              <label for="password">Contraseña:</label>
+              <input type="password" id="password" placeholder="Ingresa tu contraseña" required>
+          </div>
+          <div class="container-btn">
+            <button class="btn-contacto" type="submit">Iniciar Sesión</button> 
+          </div>  
+        </div>
+      </form>
+    </section>
+
+    <section class="contenedor-section">
+      <h2 class="h2-form2">Registrarse</h2>
+      <form class="formulario2">
+        <div class="container-formulario">
+          <div>
+              <label for="username">Usuario:</label>
+              <input type="text" id="username" placeholder="Ingresa tu usuario" required>
+          </div>
+          <div>
+              <label for="mail">Correo electrónico:</label>
+              <input type="text" id="mail" placeholder="Ingresa tu mail" required>
+          </div>
+          <div>
+              <label for="password2">Contraseña:</label>
+              <input type="password" id="password2" placeholder="Crea tu contraseña" required>
+          </div>
+          <div>
+            <label for="number">Numero telefónico:</label>
+            <input type="number" id="number" placeholder="Ingresa tu número" required>
+          </div>
+          <div class="container-btn">
+            <button class="btn-contacto" type="submit">Registrarme</button> 
+          </div>  
+        </div>
+      </form>
+    </section>
+  </div>
+
+  </main>
+  
+<!--Footer-->
+  <footer>
+      <div class="footer-redes">
+        <h2 class="footer-h2">Seguinos en nuestras redes sociales</h2>
+        <section class="hero-footer">
+          <a class="footer-a" href="https://www.instagram.com/" target="_blank">
+            <img src="../images/redes/ig-removebg-preview.png" alt="logo de instagram">
+          </a>
+    
+          <a class="footer-a" href="https://www.facebook.com/?locale=es_LA" target="_blank">
+          <img src="../images/redes/png-clipart-logo-social-network-facebook-brand-destiny-2-logo-blue-computer-network-removebg-preview.png"  alt="logo de facebook">
+         </a>
+        </section>
+      </div>
+    
+          <div class="footer-contacto">
+            <h2 class="footer-h2-especial">Contactanos</h2>
+            <ul class="contenedor-ul">
+              <li class="contenedor-li">
+                  <a href="https://web.whatsapp.com/" target="_blank">+54 11 3425 5796</a>
+                  <a href="https://www.google.com/intl/es-419/gmail/about/" target="_blank">ledeuxmagots@online.com</a>
+              </li>
+          </ul>
+        </div>
+  </footer>
+    
+  <!--script bootstrap-->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+
+</body>
+</html>

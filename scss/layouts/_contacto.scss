@@ -1,0 +1,214 @@
+//Main del contacto 
+main {
+
+         .h1-contacto {
+            color: #e1e2e6;
+            text-shadow: 0 0 5px #c0c0c7;
+            font-size: 25px;
+            font-weight: 700;
+            text-align: center;
+            padding: 35px;
+            background-color: #00001d;
+            text-transform: uppercase;
+            border: none;
+            position: sticky;
+            top: 0;
+            margin-bottom: 0;
+            z-index: 3;
+        }
+
+        .contenedor-div {
+            background-color: #33334d;
+            display: flex;
+            justify-content: center;
+            align-items: center; 
+            gap: 40px;
+
+            .contenedor-section {
+                background-color: #000000;
+                width: 35%;
+                box-shadow: 0 0 15px #000000;
+                margin: 30px 0;
+
+                &:hover {
+                    box-shadow: 0px 0px 30px 1px rgb(0, 0, 0);;
+                }
+
+                .h2-form {
+                    letter-spacing: 2px;
+                    font-size: 26px;
+                    text-shadow: 0 0 10px #ffffff69;
+                    margin-top:130px ;
+                    color: #ffffff;
+                    text-align: center;
+                    text-transform: uppercase;
+                }
+
+                .formulario {
+
+                    .container-formulario {
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+                        flex-direction: column;
+                        margin-top: 30px;
+
+                        .container-formulario div {
+                            width: 60%;
+                        }
+
+                        label {
+                            display: block;
+                            text-align: center;
+                            color: #ffffff;
+                            font-size: 20px;
+                            padding-bottom: 7px;
+
+                        }
+
+                        input {
+                            width: 100%;
+                            margin-bottom: 3px;
+                            position: relative;
+                            border-radius: 25px;
+                            border: 1px solid #1f036d;
+                        
+                            &::placeholder {
+                                color: #414040f8; 
+                                text-align: center;
+                            }
+                        }
+                        
+                        &:hover {
+                            transform: scale(0.98);
+                        }
+
+                        .container-btn {
+                            display: flex;
+                            justify-content: center;
+
+                            .btn-contacto {
+                                padding: 15px 20px;
+                                margin: 35px 0 10px 0;
+                                text-transform: uppercase;
+                                font-size: 20px;
+                                font-weight: 500;
+                                color: #ffffff;
+                                text-shadow: none;
+                                background: transparent;
+                                border: 1px solid #ffffff;
+                                transition: 0.5s ease;
+
+                                &:hover {
+                                    color: #ffffff;
+                                    background: #33334d;
+                                    border: 1px solid #333349;
+                                    text-shadow: 0 0 5px #ffffffde, 0 0 10px #ffffffee, 0 0 20px #ffffffea;
+                                    box-shadow: 0 0 5px #33334d, 0 0 20px #333349, 0 0 50px #333349,
+                                      0 0 100px #333349;
+                                    border-radius: 10px;
+                                }
+                            }
+                        }
+                    }
+                }
+
+                .h2-form2 {
+                    letter-spacing: 2px;
+                    font-size: 26px;
+                    text-shadow: 0 0 10px #ffffff70;
+                    margin-top:60px ;
+                    color: #ffffff;
+                    text-align: center;
+                    text-transform: uppercase;
+                }
+
+                .formulario2 {
+
+                    .container-formulario {
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+                        flex-direction: column;
+                        margin-top: 25px;
+
+                        .container-formulario div {
+                            width: 60%;
+                        }
+
+                        label {
+                            display: block;
+                            text-align: center;
+                            color: #ffffff;
+                            font-size: 20px;
+                            padding-bottom: 7px;
+                        }
+
+                        input {
+                            width: 100%;
+                            margin-bottom: 3px;
+                            position: relative;
+                            border-radius: 25px;
+                            border: 1px solid #1f036d;
+                        
+                            &::placeholder {
+                                color: #414040f8; 
+                                text-align: center;
+                            }
+                        }
+                        
+                        &:hover {
+                            transform: scale(0.98);
+                        }
+
+                        .container-btn {
+                            display: flex;
+                            justify-content: center;
+                            
+                            .btn-contacto {
+                                
+                                @extend %btn;
+
+                                &:hover {
+                                    color: #ffffff;
+                                    background: #33334d;
+                                    border: 1px solid #333349;
+                                    text-shadow: 0 0 5px #ffffffde, 0 0 10px #ffffffee, 0 0 20px #ffffffea;
+                                    box-shadow: 0 0 5px #33334d, 0 0 20px #333349, 0 0 50px #333349,
+                                      0 0 100px #333349;
+                                    border-radius: 10px;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    @media only screen and (max-width:1120px) {
+        .contenedor-div {
+            flex-direction: column;
+
+            .contenedor-section {
+
+                .h2-form {
+                    font-size: 22px;
+                }
+
+                .formulario, .formulario2 {
+
+                    .container-formulario {
+
+                        label {
+                            font-size: 18px;
+                        }
+
+                        input {
+                            font-size: 16px;
+                        }
+                    }
+                }
+            }
+        }
+    }

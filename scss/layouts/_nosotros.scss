@@ -1,0 +1,150 @@
+//Main de nosotros
+main {
+
+    .h1-especial2 {
+        color: #e1e2e6;
+        text-shadow: 0 0 5px #c0c0c7;
+        font-size: 27px;
+        font-weight: 700;
+        text-align: center;
+        padding: 35px;
+        background-color: #00001d;
+        text-transform: uppercase;
+        border: none;
+        position: sticky;
+        top: 0;
+        margin-bottom: 0;
+        width: 100%;
+        z-index: 3;
+    }
+    
+    .hero {
+        @include hero (#000, 60px);
+
+        .hero-content {
+            padding:30px;
+            margin: auto;
+
+            h2 {
+                letter-spacing: 3px;
+                animation: grow 2s both steps(20);
+                position: relative;
+                overflow: hidden;
+                
+                @keyframes grow {
+                    from {
+                        width: 60%;
+                    }
+    
+                    to {
+                        width: 100%;
+                    }
+                }
+            }
+            
+
+            .hero-paragraph {
+                color: #ffffff;
+                padding-top: 30px;
+                text-indent: 20px;
+                font-size: 18px;
+            }
+        }
+        
+        .hero-img {
+            width: 400px;
+        }
+    }
+
+     .hero2 {
+        flex-direction: row;
+
+        .hero-content {
+            padding:30px;
+            text-align: center;
+
+            h2 {
+                padding-top: 35px;
+                letter-spacing: 2px;
+            }
+
+            .hero-paragraph {
+                color: #ffffff;
+                padding-top: 30px;
+                text-indent: 20px;
+                font-size: 18px;
+            }
+
+        }
+
+        .hero-img2 {
+            width: 520px;
+        }
+    }
+
+    .hero {
+        display: flex;
+        background-color: $dark-color;
+        top: 60px;
+
+        .hero-content {
+            padding:30px;
+            text-align: center;
+
+            h2 {
+                padding-top: 35px;
+                letter-spacing: 2px;
+                color: #ffffff;
+                font-size: 26px;
+                font-weight: 600;
+                text-align: center;
+                text-shadow: 0 0 10px #ffffff83;
+                text-transform: uppercase;
+                padding: 20px 0 0 0;
+            }
+
+            .hero-paragraph {
+                color: #ffffff;
+                padding-top: 30px;
+                text-indent: 20px;
+                font-size: 18px;
+            }
+        }
+
+        .hero-img3 {
+            width: 500px;
+        }
+    }
+
+    hr {
+        border-color: rgb(79, 66, 95);
+        border-width: 5px;
+        margin: 0;
+    }
+
+}
+
+@media only screen and (max-width: 1200px) {
+
+    main {
+
+        .hero {
+            flex-direction: column;
+
+            .hero-img, .hero-img3 {
+
+                width: 100%;
+            }
+        }
+
+        .hero2 {
+            flex-direction: column-reverse;
+
+            .hero-img2 {
+
+                width: 100%;
+            }
+        } 
+
+}
+}
