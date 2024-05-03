@@ -19,7 +19,7 @@ main {
     }
 
     .notitulo-container {
-        background-color: #33334d;
+        background-color: $main-color;
         height: 80px;
 
         .p-container {
@@ -31,7 +31,7 @@ main {
     }
 
     .div-especial {
-        background-color:  #33334d;
+        background-color:  $main-color;
         padding-top: 70px;
 
         .especial-pascua {
@@ -44,7 +44,7 @@ main {
             flex-direction: column;
             justify-content: center; 
             align-items: center; 
-            background-color: #33334d;
+            background-color: $main-color;
             height: 2000px;
             gap: 40px;
 
@@ -58,9 +58,21 @@ main {
                     box-shadow: 0 0 50px #000000dc
                 }
 
+                p {
+                    color: $light-color;
+                    background-color: $dark-color;
+                    font-size: 20px;
+                    text-align: center;
+                    margin-bottom: 0;
+                    margin-top: -10px;
+                    text-transform: uppercase;
+                    font-size: 16px;
+                    padding: 15px; 
+                }
+
                 .span-container {
                     background-color: $dark-color;
-                    color: #ffffff;
+                    color: $light-color;
                     padding: 12px;
                     width: 70%;
                     box-shadow: 0 0 10px #0000009d;
@@ -76,16 +88,6 @@ main {
                     object-fit: cover;
                 }
                 
-                p {
-                    color: #ffffff;
-                    background-color: $dark-color;
-                    font-size: 20px;
-                    text-align: center;
-                    margin-bottom: 0;
-                    text-transform: uppercase;
-                    font-size: 16px;
-                    padding: 15px; 
-                }
             }
 
             .article-container2 {
@@ -100,7 +102,7 @@ main {
                 
                 .span-container {
                     background-color: $dark-color;
-                    color: #ffffff;
+                    color: $light-color;
                     padding: 12px;
                     width: 70%;
                     box-shadow: 0 0 10px #000000ad;
@@ -112,7 +114,7 @@ main {
                 }
 
                 p {
-                @include paragraph(#ffffff, $dark-color, 20px, center, 0, uppercase, 15px)
+                @include paragraph($light-color, $dark-color, 20px, center, 0, uppercase, 15px)
                 }
             }
 
@@ -129,7 +131,7 @@ main {
                 
                 .span-container {
                     background-color: $dark-color;
-                    color: #ffffff;
+                    color: $light-color;
                     padding: 12px;
                     width: 70%;
                     box-shadow: 0 0 10px #000000ad;
@@ -140,7 +142,7 @@ main {
                 }
 
                 p {
-                    color: #ffffff;
+                    color: $light-color;
                     background-color: $dark-color;
                     font-size: 20px;
                     text-align: center;
@@ -163,7 +165,7 @@ main {
                 
                 .span-container {
                     background-color: $dark-color;
-                    color: #ffffff;
+                    color: $light-color;
                     padding: 12px;
                     width: 70%;
                     box-shadow: 0 0 10px #000000ad;
@@ -175,7 +177,7 @@ main {
                 }
 
                 p {
-                    color: #ffffff;
+                    color: $light-color;
                     background-color: $dark-color;
                     font-size: 20px;
                     text-align: center;

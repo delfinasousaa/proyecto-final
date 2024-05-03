@@ -61,28 +61,32 @@ footer {
     flex-direction: column;
     height: 100%;
     gap: 40px;
-}
 
-.footer-h2 {
-    padding-right: 20px;
-    text-align: center;
-    font-size: 20px;
-}
+    .footer-redes {
 
-.hero-footer {
-    text-align: center;
-}
+        .footer-h2 {
+            padding-right: 20px;
+            text-align: center;
+            font-size: 20px;
+        }
+            
+        .hero-footer {
+            text-align: center;
 
-.footer-a {
-    
-    img {
-    position: relative;
-    right: 70px;
+            .footer-a {
+                img {
+                    position: relative;
+                    right: 70px;
+                }
+            }
+        }
     }
-}
-
-.footer-h2-especial {
-    padding-left: 0;
-    font-size: 18px;
+    
+    .footer-contacto {
+        .footer-h2-especial {
+            padding-left: 0;
+            font-size: 18px;
+        }
+    }
 }
 }

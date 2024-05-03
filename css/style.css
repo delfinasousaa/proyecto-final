@@ -5,7 +5,7 @@
   font-family: "Playfair Display", serif;
 }
 
-main .contenedor-div .contenedor-section .formulario2 .container-formulario .container-btn .btn-contacto {
+main .contenedor-div .contenedor-section2 .formulario2 .container-formulario .container-btn .btn-contacto, main .contenedor-div .contenedor-section .formulario .container-formulario .container-btn .btn-contacto {
   padding: 15px 20px;
   margin: 35px 0 40px 0;
   text-transform: uppercase;
@@ -61,19 +61,19 @@ footer .footer-contacto .contenedor-ul .contenedor-li a {
     height: 100%;
     gap: 40px;
   }
-  .footer-h2 {
+  footer .footer-redes .footer-h2 {
     padding-right: 20px;
     text-align: center;
     font-size: 20px;
   }
-  .hero-footer {
+  footer .footer-redes .hero-footer {
     text-align: center;
   }
-  .footer-a img {
+  footer .footer-redes .hero-footer .footer-a img {
     position: relative;
     right: 70px;
   }
-  .footer-h2-especial {
+  footer .footer-contacto .footer-h2-especial {
     padding-left: 0;
     font-size: 18px;
   }
@@ -137,6 +137,9 @@ header .contenedor-fondo .capa {
   header .contenedor-fondo .navbar .container-fluid #toggler-alineacion-hamburguesa {
     margin-bottom: 100px;
   }
+  header .contenedor-fondo .navbar .container-fluid .offcanvas .offcanvas-body {
+    margin-left: 0px;
+  }
 }
 main .h1-contacto {
   color: #e1e2e6;
@@ -162,18 +165,21 @@ main .contenedor-div {
 }
 main .contenedor-div .contenedor-section {
   background-color: #000000;
-  width: 35%;
+  width: 350px;
+  height: 530px;
   box-shadow: 0 0 15px #000000;
   margin: 30px 0;
 }
 main .contenedor-div .contenedor-section:hover {
   box-shadow: 0px 0px 30px 1px rgb(0, 0, 0);
 }
-main .contenedor-div .contenedor-section .h2-form {
+main .contenedor-div .contenedor-section .formulario {
+  padding-top: 115px;
+}
+main .contenedor-div .contenedor-section .formulario .h2-form {
   letter-spacing: 2px;
   font-size: 26px;
   text-shadow: 0 0 10px rgba(255, 255, 255, 0.4117647059);
-  margin-top: 130px;
   color: #ffffff;
   text-align: center;
   text-transform: uppercase;
@@ -213,18 +219,6 @@ main .contenedor-div .contenedor-section .formulario .container-formulario .cont
   display: flex;
   justify-content: center;
 }
-main .contenedor-div .contenedor-section .formulario .container-formulario .container-btn .btn-contacto {
-  padding: 15px 20px;
-  margin: 35px 0 10px 0;
-  text-transform: uppercase;
-  font-size: 20px;
-  font-weight: 500;
-  color: #ffffff;
-  text-shadow: none;
-  background: transparent;
-  border: 1px solid #ffffff;
-  transition: 0.5s ease;
-}
 main .contenedor-div .contenedor-section .formulario .container-formulario .container-btn .btn-contacto:hover {
   color: #ffffff;
   background: #33334d;
@@ -233,51 +227,63 @@ main .contenedor-div .contenedor-section .formulario .container-formulario .cont
   box-shadow: 0 0 5px #33334d, 0 0 20px #333349, 0 0 50px #333349, 0 0 100px #333349;
   border-radius: 10px;
 }
-main .contenedor-div .contenedor-section .h2-form2 {
+main .contenedor-div .contenedor-section2 {
+  background-color: #000000;
+  width: 350px;
+  height: 530px;
+  box-shadow: 0 0 15px #000000;
+  margin: 30px 0;
+}
+main .contenedor-div .contenedor-section2:hover {
+  box-shadow: 0px 0px 30px 1px rgb(0, 0, 0);
+}
+main .contenedor-div .contenedor-section2 .formulario2 {
+  padding-top: 50px;
+}
+main .contenedor-div .contenedor-section2 .formulario2 .h2-form2 {
   letter-spacing: 2px;
   font-size: 26px;
-  text-shadow: 0 0 10px rgba(255, 255, 255, 0.4392156863);
-  margin-top: 60px;
+  text-shadow: 0 0 10px rgba(255, 255, 255, 0.4117647059);
   color: #ffffff;
   text-align: center;
   text-transform: uppercase;
 }
-main .contenedor-div .contenedor-section .formulario2 .container-formulario {
+main .contenedor-div .contenedor-section2 .formulario2 .container-formulario {
   display: flex;
   justify-content: center;
   align-items: center;
   flex-direction: column;
-  margin-top: 25px;
+  margin-top: 30px;
 }
-main .contenedor-div .contenedor-section .formulario2 .container-formulario .container-formulario div {
+main .contenedor-div .contenedor-section2 .formulario2 .container-formulario .container-formulario div {
   width: 60%;
 }
-main .contenedor-div .contenedor-section .formulario2 .container-formulario label {
+main .contenedor-div .contenedor-section2 .formulario2 .container-formulario label {
   display: block;
   text-align: center;
   color: #ffffff;
   font-size: 20px;
   padding-bottom: 7px;
 }
-main .contenedor-div .contenedor-section .formulario2 .container-formulario input {
+main .contenedor-div .contenedor-section2 .formulario2 .container-formulario input {
   width: 100%;
   margin-bottom: 3px;
   position: relative;
   border-radius: 25px;
   border: 1px solid #1f036d;
 }
-main .contenedor-div .contenedor-section .formulario2 .container-formulario input::placeholder {
+main .contenedor-div .contenedor-section2 .formulario2 .container-formulario input::placeholder {
   color: rgba(65, 64, 64, 0.9725490196);
   text-align: center;
 }
-main .contenedor-div .contenedor-section .formulario2 .container-formulario:hover {
+main .contenedor-div .contenedor-section2 .formulario2 .container-formulario:hover {
   transform: scale(0.98);
 }
-main .contenedor-div .contenedor-section .formulario2 .container-formulario .container-btn {
+main .contenedor-div .contenedor-section2 .formulario2 .container-formulario .container-btn {
   display: flex;
   justify-content: center;
 }
-main .contenedor-div .contenedor-section .formulario2 .container-formulario .container-btn .btn-contacto:hover {
+main .contenedor-div .contenedor-section2 .formulario2 .container-formulario .container-btn .btn-contacto:hover {
   color: #ffffff;
   background: #33334d;
   border: 1px solid #333349;
@@ -290,16 +296,33 @@ main .contenedor-div .contenedor-section .formulario2 .container-formulario .con
   .contenedor-div {
     flex-direction: column;
   }
-  .contenedor-div .contenedor-section .h2-form {
-    font-size: 22px;
-  }
-  .contenedor-div .contenedor-section .formulario .container-formulario label, .contenedor-div .contenedor-section .formulario2 .container-formulario label {
+  .contenedor-div .contenedor-section .formulario .container-formulario label, .contenedor-div .contenedor-section .formulario2 .container-formulario label, .contenedor-div .contenedor-section2 .formulario .container-formulario label, .contenedor-div .contenedor-section2 .formulario2 .container-formulario label {
     font-size: 18px;
   }
-  .contenedor-div .contenedor-section .formulario .container-formulario input, .contenedor-div .contenedor-section .formulario2 .container-formulario input {
+  .contenedor-div .contenedor-section .formulario .container-formulario input, .contenedor-div .contenedor-section .formulario2 .container-formulario input, .contenedor-div .contenedor-section2 .formulario .container-formulario input, .contenedor-div .contenedor-section2 .formulario2 .container-formulario input {
     font-size: 16px;
   }
 }
+@media only screen and (max-width: 400px) {
+  main .contenedor-div {
+    flex-direction: column;
+  }
+  main .contenedor-div .contenedor-section, main .contenedor-div .contenedor-section2 {
+    width: 260px;
+  }
+}
+@media only screen and (max-width: 550px) {
+  main .contenedor-div {
+    flex-direction: column;
+  }
+  main .contenedor-div .formulario {
+    margin-top: -45px;
+  }
+  main .contenedor-div .contenedor-section {
+    height: 430px;
+  }
+}
+
 main .h1-especial2 {
   color: #e1e2e6;
   text-shadow: 0 0 5px #c0c0c7;
@@ -352,6 +375,17 @@ main .div-especial .section1 .article-container {
 main .div-especial .section1 .article-container:hover {
   box-shadow: 0 0 50px rgba(0, 0, 0, 0.862745098);
 }
+main .div-especial .section1 .article-container p {
+  color: #ffffff;
+  background-color: #000;
+  font-size: 20px;
+  text-align: center;
+  margin-bottom: 0;
+  margin-top: -10px;
+  text-transform: uppercase;
+  font-size: 16px;
+  padding: 15px;
+}
 main .div-especial .section1 .article-container .span-container {
   background-color: #000;
   color: #ffffff;
@@ -366,16 +400,6 @@ main .div-especial .section1 .article-container .section-elemento1 {
 main .div-especial .section1 .article-container img {
   width: 320px;
   object-fit: cover;
-}
-main .div-especial .section1 .article-container p {
-  color: #ffffff;
-  background-color: #000;
-  font-size: 20px;
-  text-align: center;
-  margin-bottom: 0;
-  text-transform: uppercase;
-  font-size: 16px;
-  padding: 15px;
 }
 main .div-especial .section1 .article-container2 {
   display: flex;
@@ -518,6 +542,14 @@ main .hero .hero-content h2 {
   }
   to {
     width: 100%;
+  }
+}
+@keyframes titilar {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
   }
 }
 main .hero .hero-content .hero-paragraph {
@@ -1116,25 +1148,13 @@ main .contenedor-opiniones .opiniones-p3 {
   main .contenedor-playlist .iframe-playlist {
     width: 80%;
   }
-  .contenedor-playlist {
-    display: flex;
-    flex-direction: column;
-    height: 670px;
+}
+@media only screen and (max-width: 580px) {
+  main .contenedor-ubicacion .contenedor-p .contenedor-p-1, main .contenedor-ubicacion .contenedor-p .contenedor-p-2 {
+    width: 280px;
   }
-  .iframe-playlist {
-    height: 370px;
-    width: 270px;
-  }
-  .contenedor-ubicacion {
-    height: 680px;
-  }
-  .contenedor-iframe {
-    width: 270px;
-    height: 370px;
-  }
-  .contenedor-p {
-    padding: 6px;
-    width: 200px;
+  main .contenedor-opiniones .opiniones-p1, main .contenedor-opiniones .opiniones-p2, main .contenedor-opiniones .opiniones-p3 {
+    font-size: 18px;
   }
 }
 

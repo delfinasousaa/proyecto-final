@@ -30,7 +30,6 @@ main {
                 animation: grow 2s both steps(20);
                 position: relative;
                 overflow: hidden;
-                
                 @keyframes grow {
                     from {
                         width: 60%;
@@ -40,11 +39,21 @@ main {
                         width: 100%;
                     }
                 }
+    
+                @keyframes titilar {
+                    from {
+                        opacity: 0;
+                    }
+    
+                    to {
+                        opacity: 1;
+                    }
+                }
             }
             
 
             .hero-paragraph {
-                color: #ffffff;
+                color: $light-color;
                 padding-top: 30px;
                 text-indent: 20px;
                 font-size: 18px;
@@ -69,7 +78,7 @@ main {
             }
 
             .hero-paragraph {
-                color: #ffffff;
+                color: $light-color;
                 padding-top: 30px;
                 text-indent: 20px;
                 font-size: 18px;
@@ -94,7 +103,7 @@ main {
             h2 {
                 padding-top: 35px;
                 letter-spacing: 2px;
-                color: #ffffff;
+                color: $light-color;
                 font-size: 26px;
                 font-weight: 600;
                 text-align: center;
@@ -104,7 +113,7 @@ main {
             }
 
             .hero-paragraph {
-                color: #ffffff;
+                color: $light-color;
                 padding-top: 30px;
                 text-indent: 20px;
                 font-size: 18px;
