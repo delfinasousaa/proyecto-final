@@ -107,6 +107,7 @@ header .contenedor-fondo button #toggler-alineacion-hamburguesa {
 }
 header .contenedor-fondo .offcanvas {
   background-color: #00001d;
+  width: 400px;
 }
 header .contenedor-fondo .offcanvas .offcanvas-body {
   margin-left: auto;
@@ -321,6 +322,16 @@ main .contenedor-div .contenedor-section2 .formulario2 .container-formulario .co
   main .contenedor-div .contenedor-section {
     height: 430px;
   }
+}
+
+html::-webkit-scrollbar {
+  background-color: black;
+  width: 10px;
+}
+
+html::-webkit-scrollbar-thumb {
+  background-color: rgb(255, 255, 255);
+  border-radius: 10px;
 }
 
 main .h1-especial2 {

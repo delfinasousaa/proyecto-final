@@ -1,4 +1,15 @@
 // Main del index
+html::-webkit-scrollbar {
+    background-color: black;
+    width: 10px;
+}
+
+html::-webkit-scrollbar-thumb {
+    background-color: rgb(255, 255, 255);
+    border-radius: 10px;
+}
+
+
 main {
 
     .h1-especial2 {
@@ -17,6 +28,7 @@ main {
         width: 100%;
         z-index: 3;
     }
+
 
     .notitulo-container {
         background-color: $main-color;

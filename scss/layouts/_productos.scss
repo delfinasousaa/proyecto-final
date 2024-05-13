@@ -1,6 +1,10 @@
 //Main de productos
 main{
 
+    svg {
+        vertical-align: bottom;
+      }
+
     .h1-especial2 {
         color: #e1e2e6;
         text-shadow: 0 0 5px #c0c0c7;
@@ -17,6 +21,7 @@ main{
         width: 100%;
         z-index: 3;
     }
+
 
     .div-especial {
         background-color:  $main-color;
