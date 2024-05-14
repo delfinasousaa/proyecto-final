@@ -1,10 +1,46 @@
 //Main de productos
 main{
 
-    svg {
-        vertical-align: bottom;
-      }
+    dialog {
+        height: 100vh;
+        box-sizing: border-box;
+        border: none;
+        z-index: 200 !important;
+        background-color: #b60000;
 
+        &::backdrop {
+            background-color: rgba(0, 0, 0, 0.5);
+            backdrop-filter: blur(8px); 
+        }
+
+        div {
+        
+        .modal__content {
+            background-color: #b60000 !important;
+            padding: 10px 20px;
+            width: 80%;
+            top: 300px;
+            position: relative;
+
+            .modal__title {
+                margin-top: 10px;
+            }
+
+            .modal__text {
+                color: #e1e2e6;
+            }
+
+            form {
+            .modal__close-button {
+                position: absolute;
+                top: 10px;
+                right: 10px;
+                background-color: black;
+            }
+            }
+        }
+    }
+}
     .h1-especial2 {
         color: #e1e2e6;
         text-shadow: 0 0 5px #c0c0c7;
